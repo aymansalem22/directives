@@ -34,5 +34,9 @@ export class AppComponent {
       title: 'Title #6',
       url: 'https://images.unsplash.com/photo-1588607778482-2358f4f0be5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80'
     }
-  ]
+  ];
+
+  showImage(index) {
+    return Math.abs(this.activeImg - index) < 3;
+  }
 }
